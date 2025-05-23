@@ -16,3 +16,6 @@ def extenso():
         return jsonify({"extenso": valor})
     except Exception as e:
         return jsonify({"erro": str(e)}), 400
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
